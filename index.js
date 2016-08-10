@@ -3,7 +3,7 @@ var Cylon = require('cylon');
 Cylon.robot({
 
     connections: {
-        arduino: { adaptor: 'firmata', port: 'my/port'}
+        arduino: { adaptor: 'firmata', port: '/dev/tty.usbmodem1411'}
     },
     devices: {
         led: { driver: 'led', pin: 13}
